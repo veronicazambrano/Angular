@@ -1,0 +1,13 @@
+<div class="cursos-grid">
+    <div *="let curso of cursos" class="curso-card">
+        <img [src]="curso.imagen" [alt]="curso.titulo" class="curso-imagen">
+        <div class="curso-contenido">
+            <h3>{{ curso.titulo }}</h3>
+            <p>{{ curso.descripcion }}</p>
+            <div class="curso-info">
+                <span class="curso-nivel">{{ curso.nivel }}</span>
+                <span>${{ curso.precio }}</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Aprende Sin Límites</h1>
+            <p>Desarrolla tus habilidades con los mejores cursos online</p>
+            <a routerLink="/cursos" class="btn">Explorar Cursos</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="seccion-titulo">Cursos Destacados</h2>
+        <div class="cursos-grid">
+            <app-courses></app-courses>
+            
+        </div>
+        <div >
+            <app-course-card></app-course-card>
+        </div>
+        
+    </section>
+    <section class="container">
+        <h2 class="seccion-titulo">Cursos Recomendados</h2>
+            <div  >
+                <app-couser-detail></app-couser-detail>
+            </div>
+    </section>
+</main>
+
+<app-footer></app-footer>
